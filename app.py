@@ -17,7 +17,6 @@ def get_prediction():
     results = list(model.predict(df))
     ones = results.count(1)
     zeros = results.count(0)
-    import pdb; pdb.set_trace()
     return {
         'isThanush': ones > zeros
     }
